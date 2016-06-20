@@ -1,5 +1,8 @@
 build: off
 
+artifacts:
+  - path: .
+
 deploy:
   - provider: FTP
     protocol: ftps
@@ -7,4 +10,5 @@ deploy:
     username: bot
     password:
       secure: 3JjnOhJMxF7k3VJwsB7HsA==
+    application: 
     folder: test
