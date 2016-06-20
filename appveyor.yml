@@ -12,5 +12,5 @@ deploy:
     password:
       secure: 3JjnOhJMxF7k3VJwsB7HsA==
     application: 
-    folder: test
+    folder: test/$(APPVEYOR_PULL_REQUEST_NUMBER)
     beta: true
