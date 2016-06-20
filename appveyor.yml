@@ -1,13 +1,13 @@
 build: off
 
 artifacts:
-  - path: '*'
+  - path: '*/*'
 
 deploy:
   - provider: FTP
     protocol: ftps
     host: ftp.eadie.net
-    username: bot
+    username: bot@eadie.net
     password:
       secure: 3JjnOhJMxF7k3VJwsB7HsA==
     application: 
