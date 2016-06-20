@@ -1,0 +1,8 @@
+deploy:
+  - provider: FTP
+    protocol: ftps
+    host: ftp.eadie.net
+    username: bot
+    password:
+      secure: 3JjnOhJMxF7k3VJwsB7HsA==
+    folder: test
