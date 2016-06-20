@@ -1,6 +1,7 @@
 build: off
 
 artifacts:
+  - path: '*'
   - path: '*/*'
 
 deploy:
@@ -12,3 +13,4 @@ deploy:
       secure: 3JjnOhJMxF7k3VJwsB7HsA==
     application: 
     folder: test
+    beta: true
