@@ -1,3 +1,9 @@
+branches:
+    only:
+      - master
+
+build: off
+
 build: off
 
 artifacts:
@@ -12,5 +18,5 @@ deploy:
     password:
       secure: 3JjnOhJMxF7k3VJwsB7HsA==
     application: 
-    folder: test/$(APPVEYOR_PULL_REQUEST_NUMBER)
+    folder: test/$(APPVEYOR_REPO_BRANCH)
     beta: true
