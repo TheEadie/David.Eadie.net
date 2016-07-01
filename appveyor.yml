@@ -1,28 +1,28 @@
 -
-branches:
+  branches:
     only:
       - master
 
-build: off
+  build: off
 
 -
-branches:
+  branches:
     except:
       - master
 
-build: off
+  build: off
 
-artifacts:
-  - path: '*'
-  - path: '*/*'
+  artifacts:
+    - path: '*'
+    - path: '*/*'
 
-deploy:
-  - provider: FTP
-    protocol: ftps
-    host: ftp.eadie.net
-    username: bot@eadie.net
-    password:
-      secure: 3JjnOhJMxF7k3VJwsB7HsA==
-    application: 
-    folder: test/$(APPVEYOR_REPO_BRANCH)
-    beta: true
+  deploy:
+    - provider: FTP
+      protocol: ftps
+      host: ftp.eadie.net
+      username: bot@eadie.net
+      password:
+        secure: 3JjnOhJMxF7k3VJwsB7HsA==
+      application: 
+      folder: test/$(APPVEYOR_REPO_BRANCH)
+      beta: true
