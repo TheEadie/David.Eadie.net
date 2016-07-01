@@ -4,6 +4,10 @@ branches:
 
 build: off
 
+branches:
+    except:
+      - master
+
 build: off
 
 artifacts:
