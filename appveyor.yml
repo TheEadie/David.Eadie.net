@@ -4,7 +4,19 @@
       - master
 
   build: off
-
+  
+  deploy:
+    - provider: FTP
+      protocol: ftps
+      host: ftp.eadie.net
+      username: bot@eadie.net
+      password:
+        secure: 3JjnOhJMxF7k3VJwsB7HsA==
+      application: 
+      folder: test
+      beta: true
+      on:
+        appveyor_repo_tag: true
 -
   branches:
     except:
