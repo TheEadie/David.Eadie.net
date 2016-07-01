@@ -5,6 +5,10 @@
 
   build: off
   
+  artifacts:
+    - path: '*'
+    - path: '*/*'
+  
   deploy:
     - provider: FTP
       protocol: ftps
@@ -13,7 +17,7 @@
       password:
         secure: 3JjnOhJMxF7k3VJwsB7HsA==
       application: 
-      folder: test
+      folder: 
       beta: true
       on:
         appveyor_repo_tag: true
