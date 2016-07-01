@@ -146,7 +146,7 @@
 	</div>
 	<footer>
 		<div class="pull-right">
-			<span class="glyphicon glyphicon-copyright-mark"></span> 2012 - 2015 David Eadie
+			<span class="glyphicon glyphicon-copyright-mark"></span> 2012 - <?php echo date("Y"); ?> David Eadie
 		</div>
 	<footer>
 	</div>
