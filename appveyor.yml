@@ -1,5 +1,9 @@
+  install:
+    - echo $(APPVEYOR_BUILD_VERSION)
+    - ps: $(APPVEYOR_BUILD_VERSION) | Out-File ./version.txt
+
   build: off
-  
+
   artifacts:
     - path: '*'
     - path: '*/*'
