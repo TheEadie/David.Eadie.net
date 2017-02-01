@@ -38,11 +38,11 @@
             <li><a href="http://www.github.com/TheEadie">GitHub</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right social">
-          	<li><a href="http://www.linkedin.com/profile/view?id=130854620"><i class="fa fa-lg fa-linkedin"></i></a></li>
+          	<li><a href="https://www.linkedin.com/in/david-eadie-0789a637"><i class="fa fa-lg fa-linkedin"></i></a></li>
             <li><a href="https://www.facebook.com/David.Eadie"><i class="fa fa-lg fa-facebook"></i></a></li>
             <li><a href="https://twitter.com/The_Eadie"><i class="fa fa-lg fa-twitter"></i></a></li>
             <li><a href="https://www.pinterest.com/TheEadie/"><i class="fa fa-lg fa-pinterest-p"></i></a></li>
-            <li><a href="https://instagram.com/the_eadie/"><i class="fa fa-lg fa-instagram"></i></a></li>
+            <li><a href="https://www.instagram.com/the.eadie/"><i class="fa fa-lg fa-instagram"></i></a></li>
             
           </ul>
         </div><!--/.nav-collapse -->
