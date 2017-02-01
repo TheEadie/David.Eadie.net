@@ -1,6 +1,6 @@
   install:
     - echo $env:appveyor_build_version
-    - ps: $env:appveyor_build_version | Out-File ./version.txt
+    - ps: $env:appveyor_build_version | Out-File ./version.txt -Encoding ASCII
 
   build: off
 
