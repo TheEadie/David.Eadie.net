@@ -146,6 +146,7 @@
 	</div>
 	<footer>
 		<div class="pull-right">
+			Version <?php file_get_contents("version.txt") ?>
 			<span class="glyphicon glyphicon-copyright-mark"></span> 2012 - <?php echo date("Y"); ?> David Eadie
 		</div>
 	<footer>
