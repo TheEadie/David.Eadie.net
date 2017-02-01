@@ -145,10 +145,10 @@
 	
 	</div>
 	<footer>
-		<div class="pull-right">
-			Version <?php echo file_get_contents("./version.txt") ?>
+		<div class="text-right">
 			<span class="glyphicon glyphicon-copyright-mark"></span> 2012 - <?php echo date("Y"); ?> David Eadie
 		</div>
+		<div class="text-right small">v<?php echo file_get_contents("./version.txt") ?></div>
 	<footer>
 	</div>
 
