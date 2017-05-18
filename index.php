@@ -96,21 +96,6 @@
 		</section>
 		<section class="well">
 			<figure class="media-left">
-				<img src="images/stratus.png" class="media-object" style="width: 100px; height: 100px;" />
-			</figure>	
-			<article class="media-body">
-				<h4 class="media-heading">Stratus</h4>
-				<p>
-				A light-weight home cloud solution. A simple windows app that can be used to keep two directories synced on your local network. Built on top of Microsoft sync framework.
-				</p>
-				<div class="pull-right">
-					<a class="btn btn-primary" href="#" role="button" disabled>Download</a>
-					<a class="btn btn-default" href="https://github.com/TheEadie/Stratus" role="button" >Source Code</a>
-				</div>
-			</article>
-		</section>
-		<section class="well">
-			<figure class="media-left">
 				<img src="images/musicclassifier.png" class="media-object" style="width: 100px; height: 100px;" />
 			</figure>  
 			<article class="media-body">
