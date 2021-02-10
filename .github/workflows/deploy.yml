@@ -19,7 +19,7 @@ jobs:
 
       - name: Build
         run: |
-          yarn build:all
+          yarn build
 
       - name: Upload build
         uses: actions/upload-artifact@v1

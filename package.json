@@ -6,16 +6,16 @@
   "author": "David Eadie",
   "license": "MIT",
   "scripts": {
-    "build:all": "yarn build:pages && yarn compile:css:prod",
-    "build:pages": "rm -rf dist && mkdir -p dist && cp -r ./src/*.html ./dist/",
-    "serve:prod": "yarn build && yarn serve dist",
-    "serve:dev": "yarn serve src",
-    "compile:css:prod": "NODE_ENV=production npx tailwindcss build ./src/app.css -o ./dist/index.css",
-    "compile:css:dev": "npx tailwindcss build ./src/app.css -o ./src/index.css",
-    "watch": "watch 'yarn compile:css:dev' ./src/"
+    "start": "concurrently \"yarn watch\" \"yarn serve dist\"",
+    "watch": "watch 'yarn build' ./src/",
+    "build": "yarn build:pages && yarn build:css",
+    "build:pages": "mkdir -p ./dist/ && cp -r ./src/* ./dist/",
+    "build:css": "NODE_ENV=production npx tailwindcss build ./src/app.css -o ./dist/index.css",
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.4",
+    "concurrently": "^5.3.0",
     "postcss-cli": "^7.1.1",
     "postcss-import": "^12.0.1",
     "serve": "^11.3.2",
