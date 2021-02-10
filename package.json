@@ -1,0 +1,25 @@
+{
+  "name": "david-eadie-net",
+  "version": "1.0.0",
+  "main": "dist/index.html",
+  "repository": "git@github.com:TheEadie/David.Eadie.Net.git",
+  "author": "David Eadie",
+  "license": "MIT",
+  "scripts": {
+    "build:all": "yarn build:pages && yarn compile:css:prod",
+    "build:pages": "rm -rf dist && mkdir -p dist && cp -r ./src/*.html ./dist/",
+    "serve:prod": "yarn build && yarn serve dist",
+    "serve:dev": "yarn serve src",
+    "compile:css:prod": "NODE_ENV=production npx tailwindcss build ./src/app.css -o ./dist/index.css",
+    "compile:css:dev": "npx tailwindcss build ./src/app.css -o ./src/index.css",
+    "watch": "watch 'yarn compile:css:dev' ./src/"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "serve": "^11.3.2",
+    "tailwindcss": "^1.4.6",
+    "watch": "^1.0.2"
+  }
+}
