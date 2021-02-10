@@ -58,8 +58,19 @@
 		</section>
 		<section class="well">
 			<h4 class="media-heading">About</h4>
-			<p>Professional software developer currently working primarily in C#, ASP.Net and SQL. </p>
-			<p>This page showcases a number of personal projects I have worked on over the years.</p>
+			<p>Hi! I'm David, a Software Architect based in Cambridge, UK</p>
+			<p>I enjoy designing solutions to complex problems, with a focus on developer experience, continuous integration and delivery.</p>
+			<p>I've been working in software development for over 10 years. I'm currently bringing DevOps processes to the database at Redgate Software.</p>
+			<p>These are a few of the technologies I've been working with recently:
+				<ul>
+					<li>C#</li>
+					<li>.Net</li>
+					<li>ASP.Net Core</li>
+					<li>SQL Server</li>
+					<li>Kubernetes</li>
+					<li>Docker</li>
+				</ul>
+			</p>
 		</section>
 	</div>
 	
