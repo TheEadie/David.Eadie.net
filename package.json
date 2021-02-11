@@ -12,7 +12,7 @@
     "build": "yarn build:pages && yarn build:css:prod",
     "build:pages": "mkdir -p ./dist/ && cp -r ./src/* ./dist/",
     "build:css:prod": "NODE_ENV=production npx tailwindcss build ./src/app.css -o ./dist/index.css",
-    "build:css:dev": "npx tailwindcss build ./src/app.css -o ./src/index.css",
+    "build:css:dev": "NODE_ENV=production npx tailwindcss build ./src/app.css -o ./src/index.css",
     "clean": "rm -rf dist"
   },
   "devDependencies": {

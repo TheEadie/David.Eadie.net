@@ -19,6 +19,7 @@ jobs:
 
       - name: Build
         run: |
+          yarn
           yarn build
 
       - name: Upload build
