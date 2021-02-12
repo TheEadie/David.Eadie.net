@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.h-screen-minus-nav {
-    height: calc(100vh - 4rem);
+.min-h-screen-minus-nav {
+    min-height: calc(100vh - 4rem);
   }
