@@ -8,7 +8,7 @@
   "scripts": {
     "start": "yarn build:css:dev && yarn serve src",
     "start:prod": "concurrently \"yarn watch\" \"yarn serve dist\"",
-    "watch": "watch 'yarn build' ./src/",
+    "watch": "chokidar ./src/* -c 'yarn build'",
     "build": "yarn build:pages && yarn build:css:prod",
     "build:pages": "mkdir -p ./dist/ && cp -r ./src/* ./dist/",
     "build:css:prod": "NODE_ENV=production npx tailwindcss build ./src/app.css -o ./dist/index.css",
@@ -17,12 +17,12 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
+    "chokidar-cli": "^2.1.0",
     "concurrently": "^6.1.0",
     "postcss": "^8.2.15",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
     "serve": "^11.3.2",
-    "tailwindcss": "^2.1.2",
-    "watch": "^1.0.2"
+    "tailwindcss": "^2.1.2"
   }
 }
